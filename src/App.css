@@ -4,6 +4,7 @@ body {
   background-image: url('./Asest/pexels-pixabay-209831.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed; /* This will prevent the background from scrolling */
 }
 
 .container {

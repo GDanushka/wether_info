@@ -50,13 +50,23 @@ function WeatherDetailsView() {
     return (
       <>
         {forecastData.map((day, index) => (
-          <div key={index} className="forecast-day">
-            <div className='d-flex justify-content-center align-items-center'>
-              <p>Date: {new Date(day.dt * 1000).toLocaleDateString()}</p>
-            </div>
-            <p>Temperature: {day.temp.day}°C</p>
-            <p>Weather: {day.weather[0].main}</p>
-          </div>
+             <div key={ index } className="forecast-day">
+            <div
+              className='d-flex justify-content-center align-items-center mb-3'
+              style={ { backgroundColor: 'lightblue', borderRadius: '10px' } }>
+                 <p className="font-weight-bold">Date: { new Date(day.dt * 1000).toLocaleDateString() }</p>
+               </div>
+                 <div className='row text-center'>
+                    <div className='col-4'><p>Temperature</p></div>
+                    <div className='col-4'>:</div>
+                    <div className='col-4'><p> {day.temp.day}°F</p></div>
+                  </div>
+                  <div className='row text-center'>
+                    <div className='col-4'><p>Weather</p></div>
+                    <div className='col-4'>:</div>
+                    <div className='col-4'><p>{day.weather[0].main}</p></div>
+                  </div>
+           </div>
         ))}
       </>
     );
@@ -81,28 +91,32 @@ function WeatherDetailsView() {
               </div>
               {data.name && (
                 <div className="mb-3">
-                  <h3>{data.name}</h3>
+                  <h3>{ data.name }</h3>
                   <div className='row text-center'>
-                    <div className='col-4'>
-<p>Temperature</p>
-                 
-                    </div>
-                    <div className='col-4'>
-:
-                    </div>
-                    <div className='col-4'>
- <p>{data.main.temp.toFixed()}°C</p>
-                    </div>
-
+                    <div className='col-4'><p>Temperature</p></div>
+                    <div className='col-4'>:</div>
+                    <div className='col-4'><p>{data.main.temp.toFixed()}°C</p></div>
                   </div>
-                  <p>Weather: {data.weather[0].main}</p>
-                </div>
-              )}
-              {data.name && (
-                <div className="mb-3">
-                  <p>Feels Like: {data.main.feels_like.toFixed()}°C</p>
-                  <p>Humidity: {data.main.humidity}%</p>
-                  <p>Wind Speed: {data.wind.speed.toFixed()} MPH</p>
+                  <div className='row text-center'>
+                    <div className='col-4'><p>Weather</p></div>
+                    <div className='col-4'>:</div>
+                    <div className='col-4'><p>{data.weather[0].main}</p></div>
+                  </div>
+                   <div className='row text-center'>
+                    <div className='col-4'><p>Feels Like</p></div>
+                    <div className='col-4'>:</div>
+                    <div className='col-4'><p>{data.main.feels_like.toFixed()}°C</p></div>
+                  </div>
+                  <div className='row text-center'>
+                    <div className='col-4'><p>Humidity</p></div>
+                    <div className='col-4'>:</div>
+                    <div className='col-4'><p>{data.main.humidity}%</p></div>
+                  </div>
+                  <div className='row text-center'>
+                    <div className='col-4'><p>Wind Speed</p></div>
+                    <div className='col-4'>:</div>
+                    <div className='col-4'><p>{data.wind.speed.toFixed()} MPH</p></div>
+                  </div>
                 </div>
               )}
               {data.name && !showThreeDayForecast && (
