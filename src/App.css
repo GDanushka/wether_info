@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  background-image: url('./Asest/pexels-pixabay-209831.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin-top: 50px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #cdd3d39c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-body {
+   width: 100%;
+  padding: 20px;
+}
+
+.custom-button {
+  width: 100%;
+  font-weight: 600;
+  background-color: #07426d;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.6s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-button:hover {
+  background-color: #1b8292;
+  scale: 1.05;
 }
