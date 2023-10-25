@@ -9,7 +9,7 @@ body {
 
 .container {
   margin-top: 50px;
-  
+
 }
 
 .card {
@@ -27,7 +27,7 @@ body {
 .custom-button {
   width: 100%;
   font-weight: 600;
-  background-color: #07426d;
+  background-color: #053036bf;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -42,6 +42,7 @@ body {
 }
 
 .custom-button:hover {
-  background-color: #1b8292;
+  background-color: #1c262d;
   scale: 1.05;
 }
+
