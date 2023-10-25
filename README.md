@@ -1,3 +1,13 @@
+# You can log in using this email and password using
+
+Email - test@test.com
+password - password
+
+# Please while you input the Latitude and Latitude input like this
+ example [
+      Latitude - 6.0329
+      Longitude - 80.2168
+  ] 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
