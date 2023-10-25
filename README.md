@@ -4,9 +4,9 @@ Email - test@test.com
 password - password
 
 # Please while you input the Latitude and Longitude input like this
- example 
+ example .\
       Latitude - 6.0329.\
-      Longitude - 80.2168\
+      Longitude - 80.2168
   
 # Getting Started with Create React App
 
