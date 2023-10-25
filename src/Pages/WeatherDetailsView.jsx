@@ -23,7 +23,7 @@ function WeatherDetailsView() {
       .get(weatherUrl)
       .then((response) => {
         setData(response.data);
-        setShowThreeDayForecast(false); // Reset to show weather details only
+        setShowThreeDayForecast(false);
         if (response.data.coord) {
           const forecastUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${response.data.coord.lat}&lon=${response.data.coord.lon}&exclude=current,minutely,hourly&units=imperial&appid=${weatherApiKey}`;
 
