@@ -1,6 +1,6 @@
 # You can log in using this email and password using
 
-Email - test@test.com
+Email - test@test.com \
 password - password
 
 # Please while you input the Latitude and Longitude input like this
