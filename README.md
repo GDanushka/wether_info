@@ -3,7 +3,7 @@
 Email - test@test.com
 password - password
 
-# Please while you input the Latitude and Latitude input like this
+# Please while you input the Latitude and Longitude input like this
  example [
       Latitude - 6.0329
       Longitude - 80.2168
